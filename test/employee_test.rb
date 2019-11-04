@@ -2,7 +2,6 @@ require 'minitest/autorun'
 require_relative '../lib/employee'
 
 class TestEmployee < Minitest::Test
-
   def setup
     @bobbi = Employee.new({name: "Bobbi Jaeger", age: "30", salary: "100000"})
   end
@@ -13,5 +12,4 @@ class TestEmployee < Minitest::Test
     assert_equal '30', @bobbi.age
     assert_equal '100000', @bobbi.salary
   end
-
 end
